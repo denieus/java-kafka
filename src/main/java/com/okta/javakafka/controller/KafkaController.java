@@ -20,7 +20,7 @@ public class KafkaController {
 
     @GetMapping("/kafka/produce")
     public void produce(@RequestParam String message) {
-        template.send("my_topic", message);
+        template.send("myTopic", message);
     }
 
     @GetMapping("/kafka/messages")
